@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<<<<<<< HEAD
+    <input type="file" class="myfile">
+=======
+    <input type="file" class="myfile" pattern="">
+>>>>>>> 6fff735123852745224216365917b62efd0db237
+    <img src="" alt="" class="img">
+    <script>
+        document.querySelector('.myfile').onchange = function () {
+            var myfile = document.querySelector('.myfile').files[0]
+            // FileReader:可以读取文件
+            var reader = new FileReader()
+            // 下面这个方法：没有返回值，也不能传入回调
+            reader.readAsDataURL(myfile)
+            // 它有一系列的事件来监听整个读取的过程
+            // onload:当读取成功之后会触发onload事件，同时将读取的结果存储到reader对象的result属性中
+            reader.onload = function(){
+                console.log(reader.result)
+                document.querySelector('.img').src=reader.result
+            }
+            console.log('----------------')
+        }
+    </script>
+</body>
+
+</html>
