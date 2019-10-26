@@ -2,7 +2,7 @@
   <div class="home">
     <el-container>
         <!-- 左边结构 -->
-
+      <!-- 只是用来上传git -->
       <el-aside width="200px">
           <el-menu
       default-active="1-1"
@@ -40,6 +40,7 @@
           <el-menu-item index="3-1">管理1</el-menu-item>
           <el-menu-item index="3-2">管理2</el-menu-item>
         </el-menu-item-group>
+
       </el-submenu>
     </el-menu>
       </el-aside>
